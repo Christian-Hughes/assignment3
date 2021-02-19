@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'bootstrap4', #new
+    'bootstrap_datepicker_plus', # new
     'users', #new
     'tweets', #new
 ]
@@ -88,7 +89,10 @@ DATABASES = {
     }
 }
 
+BOOTSTRAP4 = { 'include_jquery': True }
 
+LOGIN_REDIRECT_URL = 'home' # new
+LOGOUT_REDIRECT_URL = 'home' # new
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
 
